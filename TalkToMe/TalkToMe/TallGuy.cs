@@ -6,10 +6,18 @@ using System.Threading.Tasks;
 
 namespace TalkToMe
 {
-    class TallGuy
+    class TallGuy : IClown
     {
         public string Name;
         public int Height;
+        public string FunnyThingHave
+        {
+            get { return "duże buty"; }
+        }
+        public void Honk()
+        {
+            Console.WriteLine("Tut tuuuuut!");
+        }
 
         public void TalkAboutYourself()
         {

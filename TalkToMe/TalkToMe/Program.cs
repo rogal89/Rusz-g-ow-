@@ -16,6 +16,9 @@ namespace TalkToMe
                 Name = "Adam"
             };
             tallGuy.TalkAboutYourself();
+            tallGuy.Honk();
+
+            Console.ReadKey();
         }
     }
 }
