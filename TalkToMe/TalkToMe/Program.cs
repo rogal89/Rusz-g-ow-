@@ -10,6 +10,12 @@ namespace TalkToMe
     {
         static void Main(string[] args)
         {
+            TallGuy tallGuy = new TallGuy()
+            {
+                Height = 74,
+                Name = "Adam"
+            };
+            tallGuy.TalkAboutYourself();
         }
     }
 }
