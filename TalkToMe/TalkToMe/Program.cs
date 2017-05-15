@@ -10,13 +10,10 @@ namespace TalkToMe
     {
         static void Main(string[] args)
         {
-            TallGuy tallGuy = new TallGuy()
-            {
-                Height = 74,
-                Name = "Adam"
-            };
-            tallGuy.TalkAboutYourself();
-            tallGuy.Honk();
+            ScaryScary fingersTheClown = new ScaryScary("duże buty", 35);
+            FunnyFunny someFunnyClown = fingersTheClown;
+            IScaryClown someOtherScaryClown = someFunnyClown as ScaryScary;
+            someOtherScaryClown.Honk();
 
             Console.ReadKey();
         }

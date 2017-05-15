@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace TalkToMe
 {
-    interface IClown
+    interface IScaryClown: IClown
     {
-        string FunnyThingIHave { get; }
-        void Honk();
+        string ScaryThingIHave { get; }
+        void ScareLittleChildren();
     }
 }
